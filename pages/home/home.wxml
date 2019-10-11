@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<!-- {{}}  Mustach语法 -->
+<view>hellow {{name}}</view>
+<view>my age {{age}}</view>
+
+
+<!-- 遍历数据 -->
+<view wx:for="{{students}}">{{item.name}}--{{item.age}}</view>
+
+
+<!-- 监听事件 -->
+<view>当前计数: {{counter}}</view>
+<!-- 绑定封装函数 -->
+<button size="mini" bindtap="handleAddition">+</button>
+<button size="mini" bindtap="handleSubtraction">-</button>
